@@ -7,6 +7,9 @@ package ETU1965.framework.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
+
+import ETU1965.framework.Mapping;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -18,6 +21,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 public class FrontServlet extends HttpServlet {
 
+    HashMap<String,Mapping> Mappingurls;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
